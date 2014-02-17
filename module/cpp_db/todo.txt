@@ -1,0 +1,19 @@
+﻿18.10.2013:
+ - Include directory for common headers
+ * Connection options for connection
+ * identity_token for connection to handle database authentification (no_user, user_pwd, ...)
+ * Firebird driver
+ - MySql driver
+ - Odbc driver
+ - Analyse parameters from query string (type, value for outputparaemter)
+ - Support output parameters
+ - add testcase for named parameters
+ - Query driver for capabilities (e.g. nested transactions)
+ - transactions can span multiple databases (in firebird)
+ - transactions can have options
+ * retrieve current transaction from connection
+ * firebird requires a separate execute_ddl for create database and set transaction
+ * weakpointers don't throw if they are expired.
+ * test result with an empty result set.
+ - unicode support
+ * add expected fail to testsystem
